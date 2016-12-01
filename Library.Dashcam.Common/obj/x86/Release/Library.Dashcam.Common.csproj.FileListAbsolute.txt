@@ -1,0 +1,5 @@
+C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Library.Dashcam.Common\bin\x86\Release\Common.dll
+C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Library.Dashcam.Common\bin\x86\Release\Common.pdb
+C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Library.Dashcam.Common\obj\x86\Release\Library.Dashcam.Common.csprojResolveAssemblyReference.cache
+C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Library.Dashcam.Common\obj\x86\Release\Common.dll
+C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Library.Dashcam.Common\obj\x86\Release\Common.pdb

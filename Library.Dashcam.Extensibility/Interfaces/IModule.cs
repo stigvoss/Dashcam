@@ -17,6 +17,8 @@ namespace Library.Dashcam.Extensibility.Interfaces
 
         IConfiguration Configuration { get; set; }
 
+        Type ConfigurationType { get; }
+
         void Execute(FrameInfo frameInfo);
     }
 }

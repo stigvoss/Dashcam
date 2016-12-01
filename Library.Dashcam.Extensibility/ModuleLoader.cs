@@ -1,4 +1,5 @@
 ﻿using Library.Dashcam.Extensibility.Interfaces;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -31,7 +32,16 @@ namespace Library.Dashcam.Extensibility
 
             foreach (string fileName in fileNames)
             {
-                modules.AddRange(LoadModules(fileName));
+                FileInfo fileInfo = new FileInfo(fileName);
+
+                IEnumerable<IModule> loaded = LoadModules(fileName);
+
+                foreach(IModule module in loaded)
+                {
+                    LoadConfigurations(module, fileInfo);
+                }
+
+                modules.AddRange(loaded);
             }
 
             foreach (IModule module in modules)
@@ -41,6 +51,32 @@ namespace Library.Dashcam.Extensibility
                     _modules.Add(module);
                 }
             }
+        }
+
+        private static void LoadConfigurations(IModule module, FileInfo fileInfo)
+        {
+            const string CONFIGURATION_EXTENSION = ".json";
+
+            DirectoryInfo directory = fileInfo.Directory;
+
+            string fileName = fileInfo.Name;
+
+            string baseFileName = Path.GetFileNameWithoutExtension(fileName);
+
+            string configurationFile = Path.Combine(directory.FullName, baseFileName + CONFIGURATION_EXTENSION);
+
+            Type configurationType = module.ConfigurationType;
+
+            IConfiguration configuration = (IConfiguration)Activator.CreateInstance(configurationType);
+
+            if (File.Exists(configurationFile))
+            {
+                string content = File.ReadAllText(configurationFile);
+
+                JsonConvert.PopulateObject(content, configuration);
+            }
+
+            module.Configuration = configuration;
         }
 
         private static List<IModule> LoadModules(string fileName)

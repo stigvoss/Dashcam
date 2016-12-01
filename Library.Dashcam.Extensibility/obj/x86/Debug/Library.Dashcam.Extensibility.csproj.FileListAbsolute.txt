@@ -1,7 +1,0 @@
-c:\users\development\documents\visual studio 2015\Projects\Dashcam\Library.Dashcam.Extensibility\obj\x86\Debug\Library.Dashcam.Extensibility.csprojResolveAssemblyReference.cache
-c:\users\development\documents\visual studio 2015\Projects\Dashcam\Library.Dashcam.Extensibility\bin\x86\Debug\Extensibility.dll
-c:\users\development\documents\visual studio 2015\Projects\Dashcam\Library.Dashcam.Extensibility\bin\x86\Debug\Extensibility.pdb
-c:\users\development\documents\visual studio 2015\Projects\Dashcam\Library.Dashcam.Extensibility\bin\x86\Debug\Common.dll
-c:\users\development\documents\visual studio 2015\Projects\Dashcam\Library.Dashcam.Extensibility\bin\x86\Debug\Common.pdb
-c:\users\development\documents\visual studio 2015\Projects\Dashcam\Library.Dashcam.Extensibility\obj\x86\Debug\Extensibility.dll
-c:\users\development\documents\visual studio 2015\Projects\Dashcam\Library.Dashcam.Extensibility\obj\x86\Debug\Extensibility.pdb

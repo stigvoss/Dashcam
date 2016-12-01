@@ -52,6 +52,8 @@ namespace Library.Dashcam.Extensibility
 
         public abstract string Name { get; }
 
+        public abstract Type ConfigurationType { get; }
+
         public abstract void Execute(FrameInfo frameInfo);
     }
 }
