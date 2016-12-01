@@ -1,0 +1,9 @@
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\Timestamp\obj\Debug\Timestamp.csprojResolveAssemblyReference.cache
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\Timestamp\bin\Debug\Timestamp.dll
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\Timestamp\bin\Debug\Timestamp.pdb
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\Timestamp\obj\Debug\Timestamp.dll
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\Timestamp\obj\Debug\Timestamp.pdb
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\Timestamp\bin\Debug\Common.dll
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\Timestamp\bin\Debug\Extensibility.dll
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\Timestamp\bin\Debug\Common.pdb
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\Timestamp\bin\Debug\Extensibility.pdb

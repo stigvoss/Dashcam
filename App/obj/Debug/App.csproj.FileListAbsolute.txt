@@ -1,0 +1,45 @@
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\App\bin\Debug\App.exe.config
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\App\bin\Debug\avcodec-53.dll
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\App\bin\Debug\avdevice-53.dll
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\App\bin\Debug\avformat-53.dll
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\App\bin\Debug\avutil-51.dll
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\App\bin\Debug\postproc-52.dll
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\App\bin\Debug\swresample-0.dll
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\App\bin\Debug\swscale-2.dll
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\App\bin\Debug\Accord.dll.config
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\App\bin\Debug\App.exe
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\App\bin\Debug\App.pdb
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\App\bin\Debug\Library.Dashcam.Common.dll
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\App\bin\Debug\Library.Dashcam.Core.dll
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\App\bin\Debug\Library.Dashcam.Extensibility.dll
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\App\bin\Debug\Newtonsoft.Json.dll
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\App\bin\Debug\Accord.Video.DirectShow.dll
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\App\bin\Debug\Accord.Video.FFMPEG.dll
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\App\bin\Debug\Accord.Video.dll
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\App\bin\Debug\Toolbox.dll
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\App\bin\Debug\Accord.dll
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\App\bin\Debug\Library.Dashcam.Common.pdb
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\App\bin\Debug\Library.Dashcam.Core.pdb
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\App\bin\Debug\Library.Dashcam.Extensibility.pdb
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\App\bin\Debug\Newtonsoft.Json.xml
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\App\bin\Debug\Accord.Video.DirectShow.xml
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\App\bin\Debug\Accord.Video.FFMPEG.xml
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\App\bin\Debug\Accord.Video.xml
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\App\bin\Debug\Toolbox.pdb
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\App\bin\Debug\Accord.xml
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\App\obj\Debug\App.csprojResolveAssemblyReference.cache
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\App\obj\Debug\App.exe
+c:\users\development\documents\visual studio 2015\Projects\Dashcam\App\obj\Debug\App.pdb
+D:\bin\App.exe.config
+D:\bin\avcodec-53.dll
+D:\bin\avdevice-53.dll
+D:\bin\avformat-53.dll
+D:\bin\avutil-51.dll
+D:\bin\postproc-52.dll
+D:\bin\swresample-0.dll
+D:\bin\swscale-2.dll
+D:\bin\Accord.dll.config
+D:\bin\App.exe
+D:\bin\App.pdb
+D:\bin\App.exe.CodeAnalysisLog.xml
+D:\bin\App.exe.lastcodeanalysissucceeded
