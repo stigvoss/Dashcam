@@ -271,16 +271,6 @@ namespace Library.Dashcam.Core
                         if (module.Capabilities.Contains(ModuleCapabilities.MODIFY))
                         {
                             module.Execute(frameInfo);
-<<<<<<< HEAD
-
-                            if(frameInfo.Frame.PixelFormat == System.Drawing.Imaging.PixelFormat.DontCare)
-                            {
-                                Console.WriteLine();
-                            }
-
-                            process.Add(frameInfo);
-=======
->>>>>>> feature/Extensibility
                         }
 
                         if (module.Capabilities.Contains(ModuleCapabilities.PROCESS))
