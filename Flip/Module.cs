@@ -10,7 +10,15 @@ namespace Flip
 {
     public class Module : Library.Dashcam.Extensibility.Module
     {
-        private const string MODULE_NAME = "Flip";
+        private const string MODULE_NAME = "Flip and Rotate";
+
+        public override Type ConfigurationType
+        {
+            get
+            {
+                return typeof(ModuleConfiguration);
+            }
+        }
 
         public override string Name
         {
@@ -22,9 +30,52 @@ namespace Flip
 
         public override void Execute(FrameInfo frameInfo)
         {
+            ModuleConfiguration configuration = (ModuleConfiguration)Configuration;
+
             Bitmap bitmap = frameInfo.Frame;
 
-            bitmap.RotateFlip(RotateFlipType.Rotate180FlipNone);
+            RotateFlipType action;
+
+            switch (configuration.Degrees)
+            {
+                default:
+                case 0:
+                    action = RotateFlipType.RotateNoneFlipNone;
+                    break;
+                case 90:
+                    action = RotateFlipType.Rotate90FlipNone;
+                    break;
+                case 180:
+                    action = RotateFlipType.Rotate180FlipNone;
+                    break;
+                case 270:
+                    action = RotateFlipType.Rotate270FlipNone;
+                    break;
+
+            }
+
+            bitmap.RotateFlip(action);
+
+            switch (configuration.Flip)
+            {
+                default:
+                case null:
+                    action = RotateFlipType.RotateNoneFlipNone;
+                    return;
+                case "X":
+                    action = RotateFlipType.Rotate90FlipNone;
+                    break;
+                case "Y":
+                    action = RotateFlipType.Rotate180FlipNone;
+                    break;
+                case "YX":
+                case "XY":
+                    action = RotateFlipType.Rotate270FlipNone;
+                    break;
+
+            }
+
+            bitmap.RotateFlip(action);
         }
     }
 }

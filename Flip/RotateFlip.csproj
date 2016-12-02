@@ -7,8 +7,8 @@
     <ProjectGuid>{2CA6E0E0-400F-4211-9A46-6E0660A31906}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Flip</RootNamespace>
-    <AssemblyName>Flip</AssemblyName>
+    <RootNamespace>RotateFlip</RootNamespace>
+    <AssemblyName>RotateFlip</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Module.cs" />
+    <Compile Include="ModuleConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -11,7 +11,7 @@ namespace Timestamp
     public class Module : Library.Dashcam.Extensibility.Module
     {
         private const string MODULE_NAME = "Timestamp";
-
+        
         public override Type ConfigurationType
         {
             get
