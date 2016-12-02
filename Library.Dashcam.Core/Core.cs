@@ -261,10 +261,24 @@ namespace Library.Dashcam.Core
                         if (module.Capabilities.Contains(ModuleCapabilities.MODIFY))
                         {
                             module.Execute(frameInfo);
+                            process.Add(frameInfo);
+                        }
+                        
+                        if (module.Capabilities.Contains(ModuleCapabilities.PROCESS))
+                        {
+                            module.Execute(new FrameInfo
+                            {
+                                Frame = frameInfo.Frame.DeepCopy(),
+                                Time = frameInfo.Time
+                            });
+                            process.Add(frameInfo);
+                        }
+
+                        if (module.Capabilities.Contains(ModuleCapabilities.CONSUME))
+                        {
+                            module.Execute(frameInfo);
                         }
                     }
-
-                    process.Add(frameInfo);
                 }
             }
             finally
