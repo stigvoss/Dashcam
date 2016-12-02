@@ -1,9 +1,0 @@
-C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Flip\bin\Debug\Flip.dll
-C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Flip\bin\Debug\Flip.pdb
-C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Flip\bin\Debug\Common.dll
-C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Flip\bin\Debug\Extensibility.dll
-C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Flip\bin\Debug\Common.pdb
-C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Flip\bin\Debug\Extensibility.pdb
-C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Flip\obj\Debug\Flip.csprojResolveAssemblyReference.cache
-C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Flip\obj\Debug\Flip.dll
-C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Flip\obj\Debug\Flip.pdb
