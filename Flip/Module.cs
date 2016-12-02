@@ -77,8 +77,6 @@ namespace Flip
             }
 
             bitmap.RotateFlip(action);
-
-            frameInfo.Frame = bitmap.DeepCopy();
         }
     }
 }
