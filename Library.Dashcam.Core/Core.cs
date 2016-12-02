@@ -264,11 +264,14 @@ namespace Library.Dashcam.Core
             {
                 foreach (FrameInfo frameInfo in preProcess.GetConsumingEnumerable())
                 {
+                    bool isConsumed = false;
+
                     foreach (IModule module in ModuleLoader.Modules)
                     {
                         if (module.Capabilities.Contains(ModuleCapabilities.MODIFY))
                         {
                             module.Execute(frameInfo);
+<<<<<<< HEAD
 
                             if(frameInfo.Frame.PixelFormat == System.Drawing.Imaging.PixelFormat.DontCare)
                             {
@@ -276,6 +279,8 @@ namespace Library.Dashcam.Core
                             }
 
                             process.Add(frameInfo);
+=======
+>>>>>>> feature/Extensibility
                         }
 
                         if (module.Capabilities.Contains(ModuleCapabilities.PROCESS))
@@ -285,13 +290,18 @@ namespace Library.Dashcam.Core
                                 Frame = frameInfo.Frame.DeepCopy(),
                                 Time = frameInfo.Time
                             });
-                            process.Add(frameInfo);
                         }
 
                         if (module.Capabilities.Contains(ModuleCapabilities.CONSUME))
                         {
                             module.Execute(frameInfo);
+                            isConsumed = true;
                         }
+                    }
+
+                    if (!isConsumed)
+                    {
+                        process.Add(frameInfo);
                     }
                 }
             }
