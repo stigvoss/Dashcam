@@ -12,11 +12,11 @@ namespace Timestamp
     {
         private const string MODULE_NAME = "Timestamp";
 
-        public Module()
+        public override Type ConfigurationType
         {
-            if (!(Configuration is ModuleConfiguration))
+            get
             {
-                Configuration = new ModuleConfiguration();
+                return typeof(ModuleConfiguration);
             }
         }
 

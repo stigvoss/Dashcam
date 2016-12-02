@@ -1,0 +1,4 @@
+C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Agent\obj\Release\Agent.csprojResolveAssemblyReference.cache
+C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Agent\obj\Release\Agent.DashcamLoaderAgent.resources
+C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Agent\obj\Release\Agent.ProjectInstaller.resources
+C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Agent\obj\Release\Agent.csproj.GenerateResource.Cache
