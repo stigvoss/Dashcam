@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Library.Dashcam.Common;
 using System.Drawing;
+using Toolbox.Extensions;
 
 namespace Flip
 {
@@ -61,16 +62,16 @@ namespace Flip
                 default:
                 case null:
                     action = RotateFlipType.RotateNoneFlipNone;
-                    return;
+                    break;
                 case "X":
-                    action = RotateFlipType.Rotate90FlipNone;
+                    action = RotateFlipType.RotateNoneFlipX;
                     break;
                 case "Y":
-                    action = RotateFlipType.Rotate180FlipNone;
+                    action = RotateFlipType.RotateNoneFlipY;
                     break;
                 case "YX":
                 case "XY":
-                    action = RotateFlipType.Rotate270FlipNone;
+                    action = RotateFlipType.RotateNoneFlipXY;
                     break;
 
             }

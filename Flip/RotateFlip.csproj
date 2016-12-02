@@ -46,6 +46,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Toolbox\Toolbox\Toolbox.csproj">
+      <Project>{3A37EFF2-742B-47F7-BCF0-60B7B2C0890C}</Project>
+      <Name>Toolbox</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Library.Dashcam.Common\Library.Dashcam.Common.csproj">
       <Project>{f85f966e-d751-4213-b40f-5cd1c948154e}</Project>
       <Name>Library.Dashcam.Common</Name>
