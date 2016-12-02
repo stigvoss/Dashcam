@@ -1,0 +1,13 @@
+C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Flip\bin\Debug\RotateFlip.dll
+C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Flip\bin\Debug\RotateFlip.pdb
+C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Flip\bin\Debug\Common.dll
+C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Flip\bin\Debug\Extensibility.dll
+C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Flip\bin\Debug\Toolbox.dll
+C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Flip\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Flip\bin\Debug\Toolbox.pdb
+C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Flip\bin\Debug\Common.pdb
+C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Flip\bin\Debug\Extensibility.pdb
+C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Flip\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Flip\obj\Debug\RotateFlip.csprojResolveAssemblyReference.cache
+C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Flip\obj\Debug\RotateFlip.dll
+C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Flip\obj\Debug\RotateFlip.pdb
