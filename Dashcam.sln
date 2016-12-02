@@ -19,7 +19,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{A54D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Timestamp", "Timestamp\Timestamp.csproj", "{33D47167-4179-4EC7-B97B-CF31A8B0A20A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flip", "Flip\Flip.csproj", "{2CA6E0E0-400F-4211-9A46-6E0660A31906}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RotateFlip", "Flip\RotateFlip.csproj", "{2CA6E0E0-400F-4211-9A46-6E0660A31906}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

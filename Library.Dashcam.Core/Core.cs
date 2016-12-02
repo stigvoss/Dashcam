@@ -124,6 +124,7 @@ namespace Library.Dashcam.Core
             {
                 foreach (FrameInfo frameInfo in buffer.GetConsumingEnumerable())
                 {
+
                     if (!begin.HasValue)
                     {
                         begin = frameInfo.Time;
@@ -150,8 +151,15 @@ namespace Library.Dashcam.Core
                         AudioCodec.None, 0, 0, 0);
                     }
                     TimeSpan elapsed = frameInfo.Time - begin.Value;
-
-                    writer.WriteVideoFrame(frameInfo.Frame, elapsed);
+                    
+                    try
+                    {
+                        writer.WriteVideoFrame(frameInfo.Frame, elapsed);
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                    }
 
                     frameInfo.Dispose();
 
@@ -261,9 +269,15 @@ namespace Library.Dashcam.Core
                         if (module.Capabilities.Contains(ModuleCapabilities.MODIFY))
                         {
                             module.Execute(frameInfo);
+
+                            if(frameInfo.Frame.PixelFormat == System.Drawing.Imaging.PixelFormat.DontCare)
+                            {
+                                Console.WriteLine();
+                            }
+
                             process.Add(frameInfo);
                         }
-                        
+
                         if (module.Capabilities.Contains(ModuleCapabilities.PROCESS))
                         {
                             module.Execute(new FrameInfo
