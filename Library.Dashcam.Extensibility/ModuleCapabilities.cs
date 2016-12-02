@@ -9,6 +9,7 @@ namespace Library.Dashcam.Extensibility
     public enum ModuleCapabilities
     {
         MODIFY,
-        PROCESS
+        PROCESS,
+        CONSUME
     }
 }
