@@ -8,6 +8,6 @@ namespace Library.Dashcam.Extensibility.Interfaces
 {
     public interface IConfiguration
     {
-
+        bool Enable { get; set; }
     }
 }
