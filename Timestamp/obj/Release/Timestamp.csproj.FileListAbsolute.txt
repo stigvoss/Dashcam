@@ -1,0 +1,11 @@
+C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Timestamp\bin\Release\Timestamp.dll
+C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Timestamp\bin\Release\Timestamp.pdb
+C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Timestamp\bin\Release\Common.dll
+C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Timestamp\bin\Release\Extensibility.dll
+C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Timestamp\bin\Release\Newtonsoft.Json.dll
+C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Timestamp\bin\Release\Common.pdb
+C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Timestamp\bin\Release\Extensibility.pdb
+C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Timestamp\bin\Release\Newtonsoft.Json.xml
+C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Timestamp\obj\Release\Timestamp.csprojResolveAssemblyReference.cache
+C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Timestamp\obj\Release\Timestamp.dll
+C:\Users\Development\Documents\Visual Studio 2015\Projects\Dashcam\Timestamp\obj\Release\Timestamp.pdb

@@ -36,12 +36,17 @@ namespace Library.Dashcam.Extensibility
 
                 IEnumerable<IModule> loaded = LoadModules(fileName);
 
-                foreach(IModule module in loaded)
+                IEnumerable<IModule> weighted = loaded.OrderByDescending(m => m.Weight);
+
+                foreach (IModule module in weighted)
                 {
                     LoadConfigurations(module, fileInfo);
-                }
 
-                modules.AddRange(loaded);
+                    if (module.Configuration.Enable)
+                    {
+                        modules.Add(module);
+                    }
+                }
             }
 
             foreach (IModule module in modules)
@@ -67,13 +72,18 @@ namespace Library.Dashcam.Extensibility
 
             Type configurationType = module.ConfigurationType;
 
-            IConfiguration configuration = (IConfiguration)Activator.CreateInstance(configurationType);
+            IConfiguration configuration = new DefaultConfiguration();
 
-            if (File.Exists(configurationFile))
+            if (configurationType != null)
             {
-                string content = File.ReadAllText(configurationFile);
+                configuration = (IConfiguration)Activator.CreateInstance(configurationType);
 
-                JsonConvert.PopulateObject(content, configuration);
+                if (File.Exists(configurationFile))
+                {
+                    string content = File.ReadAllText(configurationFile);
+
+                    JsonConvert.PopulateObject(content, configuration);
+                }
             }
 
             module.Configuration = configuration;
@@ -86,8 +96,8 @@ namespace Library.Dashcam.Extensibility
             Assembly assembly = Assembly.LoadFrom(fileName);
 
             Type[] exportedTypes = assembly.GetExportedTypes();
-            
-            foreach(Type exportedType in exportedTypes)
+
+            foreach (Type exportedType in exportedTypes)
             {
                 object instance = Activator.CreateInstance(exportedType);
 

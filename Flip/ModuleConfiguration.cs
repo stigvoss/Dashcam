@@ -9,12 +9,47 @@ namespace Flip
 {
     public class ModuleConfiguration : IConfiguration
     {
-        private int _degrees = 180;
+        private int _degrees = 0;
 
         private string _flip = null;
 
-        public int Degrees { get { return _degrees; } set { _degrees = value; } }
+        private bool _enable = true;
 
-        public string Flip { get { return _flip; } set { _flip = value; } }
+        public int Degrees
+        {
+            get
+            {
+                return _degrees;
+            }
+            set
+            {
+                _degrees = value;
+            }
+        }
+
+        public bool Enable
+        {
+            get
+            {
+                return _enable;
+            }
+
+            set
+            {
+                _enable = value;
+            }
+        }
+
+        public string Flip
+        {
+            get
+            {
+                return _flip;
+            }
+            set
+            {
+                _flip = value;
+            }
+        }
     }
 }
