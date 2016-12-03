@@ -124,6 +124,7 @@ namespace Library.Dashcam.Core
             {
                 foreach (FrameInfo frameInfo in buffer.GetConsumingEnumerable())
                 {
+
                     if (!begin.HasValue)
                     {
                         begin = frameInfo.Time;
@@ -150,8 +151,15 @@ namespace Library.Dashcam.Core
                         AudioCodec.None, 0, 0, 0);
                     }
                     TimeSpan elapsed = frameInfo.Time - begin.Value;
-
-                    writer.WriteVideoFrame(frameInfo.Frame, elapsed);
+                    
+                    try
+                    {
+                        writer.WriteVideoFrame(frameInfo.Frame, elapsed);
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                    }
 
                     frameInfo.Dispose();
 
