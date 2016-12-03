@@ -36,7 +36,9 @@ namespace Library.Dashcam.Extensibility
 
                 IEnumerable<IModule> loaded = LoadModules(fileName);
 
-                foreach (IModule module in loaded)
+                IEnumerable<IModule> weighted = loaded.OrderByDescending(m => m.Weight);
+
+                foreach (IModule module in weighted)
                 {
                     LoadConfigurations(module, fileInfo);
 
