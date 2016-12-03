@@ -1,5 +1,6 @@
 ﻿using Library.Dashcam.Extensibility.Interfaces;
 using System.Drawing;
+using System;
 
 namespace Timestamp
 {
@@ -13,6 +14,8 @@ namespace Timestamp
         private PointF _position = new PointF(8f, 8f);
 
         private Font _font;
+
+        private bool _enable = true;
 
         public ModuleConfiguration()
         {
@@ -76,6 +79,19 @@ namespace Timestamp
             set
             {
                 _position = value;
+            }
+        }
+
+        public bool Enable
+        {
+            get
+            {
+                return _enable;
+            }
+
+            set
+            {
+                _enable = value;
             }
         }
     }

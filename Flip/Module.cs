@@ -6,12 +6,24 @@ using System.Threading.Tasks;
 using Library.Dashcam.Common;
 using System.Drawing;
 using Toolbox.Extensions;
+using Library.Dashcam.Extensibility;
 
 namespace Flip
 {
     public class Module : Library.Dashcam.Extensibility.Module
     {
         private const string MODULE_NAME = "Flip and Rotate";
+
+        public override ModuleCapabilities[] Capabilities
+        {
+            get
+            {
+                return new ModuleCapabilities[]
+                {
+                    ModuleCapabilities.MODIFY
+                };
+            }
+        }
 
         public override Type ConfigurationType
         {
