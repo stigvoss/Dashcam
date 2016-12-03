@@ -14,6 +14,7 @@ namespace Library.Dashcam.Common
         public int Device { get; set; }
         public string FileFormat { get; set; }
         public string FileNameFormat { get; set; }
+        public int FrameRate { get; set; }
         public int Height { get; set; }
         public bool ShowTimestamp { get; set; }
         public int Width { get; set; }

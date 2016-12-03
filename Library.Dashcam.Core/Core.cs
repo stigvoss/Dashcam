@@ -99,6 +99,17 @@ namespace Library.Dashcam.Core
         {
             int width = configuration.Width;
             int height = configuration.Height;
+            int frameRate = configuration.FrameRate;
+
+            foreach (VideoCapabilities capability in device.VideoCapabilities)
+            {
+                Size frameSize = capability.FrameSize;
+
+                if (frameSize.Width == width && frameSize.Height == height && capability.MaximumFrameRate == frameRate)
+                {
+                    return capability;
+                }
+            }
 
             foreach (VideoCapabilities capability in device.VideoCapabilities)
             {
@@ -145,7 +156,7 @@ namespace Library.Dashcam.Core
                         writer.Open(Path.Combine(_data.LocalPath, fileName),
                         _source.VideoResolution.FrameSize.Width,
                         _source.VideoResolution.FrameSize.Height,
-                        _source.VideoResolution.AverageFrameRate,
+                        _source.VideoResolution.MaximumFrameRate,
                         (VideoCodec)_configuration.Codec,
                         _configuration.BitRate,
                         AudioCodec.None, 0, 0, 0);
