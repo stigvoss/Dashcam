@@ -11,21 +11,12 @@ namespace Library.Dashcam.Extensibility
     public abstract class Module : IModule
     {
         private int _weight = 1000;
+        private bool _enable = true;
 
         private IConfiguration _configuration = default(IConfiguration);
 
-        private ModuleCapabilities[] _capabilities = new ModuleCapabilities[]
-        {
-            ModuleCapabilities.MODIFY
-        };
+        public abstract ModuleCapabilities[] Capabilities { get; }
 
-        public ModuleCapabilities[] Capabilities
-        {
-            get
-            {
-                return _capabilities;
-            }
-        }
         public IConfiguration Configuration
         {
             get
