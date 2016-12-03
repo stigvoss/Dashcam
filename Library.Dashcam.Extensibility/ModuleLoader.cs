@@ -38,9 +38,10 @@ namespace Library.Dashcam.Extensibility
 
                 foreach (IModule module in loaded)
                 {
+                    LoadConfigurations(module, fileInfo);
+
                     if (module.Configuration.Enable)
                     {
-                        LoadConfigurations(module, fileInfo);
                         modules.Add(module);
                     }
                 }

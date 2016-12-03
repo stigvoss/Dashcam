@@ -40,6 +40,16 @@ namespace Flip
             }
         }
 
-        public string Flip { get { return _flip; } set { _flip = value; } }
+        public string Flip
+        {
+            get
+            {
+                return _flip;
+            }
+            set
+            {
+                _flip = value;
+            }
+        }
     }
 }
