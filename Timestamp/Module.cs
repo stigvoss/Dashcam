@@ -5,12 +5,24 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Library.Dashcam.Extensibility;
 
 namespace Timestamp
 {
     public class Module : Library.Dashcam.Extensibility.Module
     {
         private const string MODULE_NAME = "Timestamp";
+
+        public override ModuleCapabilities[] Capabilities
+        {
+            get
+            {
+                return new ModuleCapabilities[]
+                {
+                    ModuleCapabilities.MODIFY
+                };
+            }
+        }
 
         public override Type ConfigurationType
         {
